@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import './style.css'
-
+import {Link} from "react-router-dom"
 
 function App() {
   const[nome,setNome] = useState("")
@@ -79,8 +79,9 @@ function App() {
               <span className="focus-input" data-placeholder="Confirmar Senha"></span>   
             </div>
             {/*  Botão de Cadastro  */ }
+            
             <div className="container-cadastro-form-btn">
-              <button className="cadastro-form-btn">Cadastrar</button>
+            <Link to="/"><button className="register-form-btn-Register">Registrar</button></Link>
             </div>
 
             {/*  Href para login    */ }
